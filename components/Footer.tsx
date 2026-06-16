@@ -9,9 +9,9 @@ export default function Footer() {
         <Image
           src={IMAGES.logo}
           alt="4EWAFIT"
-          width={120}
-          height={48}
-          className="h-10 w-auto object-contain brightness-0 invert opacity-80"
+          width={180}
+          height={72}
+          className="h-16 w-auto object-contain brightness-0 invert opacity-80"
         />
         <div className="text-xs sm:text-sm">
           {CONTACT.addressShort} ·{" "}
