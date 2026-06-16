@@ -2,17 +2,17 @@ import { CONTACT, PRICING } from "@/lib/content";
 
 export default function Pricing() {
   return (
-    <section id="preise" className="py-16 px-6 bg-gray-50">
+    <section id="preise" className="py-12 sm:py-16 px-4 sm:px-6 bg-gray-50">
       <div className="max-w-5xl mx-auto">
         <p className="text-xs font-bold text-brand uppercase tracking-widest mb-2">Preise</p>
-        <h2 className="text-3xl font-black tracking-tight leading-tight mb-10">
+        <h2 className="text-2xl sm:text-3xl font-black tracking-tight leading-tight mb-8 sm:mb-10">
           Transparent.<br />Kein Kleingedrucktes.
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 mb-4">
           {PRICING.map((plan) => (
             <div
               key={plan.title}
-              className={`relative rounded-2xl p-7 border-2 ${
+              className={`relative rounded-2xl p-6 sm:p-7 border-2 ${
                 plan.featured ? "border-brand bg-red-50" : "border-gray-200 bg-white"
               }`}
             >
@@ -22,9 +22,9 @@ export default function Pricing() {
                 </span>
               )}
               <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">{plan.title}</p>
-              <p className="text-5xl font-black text-gray-900 tracking-tight leading-none mb-1">
+              <p className="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight leading-none mb-1">
                 {plan.price}{" "}
-                <span className="text-xl font-normal text-gray-400">{plan.unit}</span>
+                <span className="text-lg sm:text-xl font-normal text-gray-400">{plan.unit}</span>
               </p>
               <p className="text-sm text-gray-500 leading-relaxed mt-2 mb-5">{plan.description}</p>
               <a

@@ -3,9 +3,9 @@ import { CONTACT, IMAGES, QUALIFICATIONS } from "@/lib/content";
 
 export default function AboutEwa() {
   return (
-    <section id="ueber-ewa" className="py-16 px-6">
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-[5fr_6fr] gap-12 items-start">
-        <div className="rounded-2xl overflow-hidden aspect-[3/4] relative bg-gray-100">
+    <section id="ueber-ewa" className="py-12 sm:py-16 px-4 sm:px-6">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-[5fr_6fr] gap-8 sm:gap-12 items-start">
+        <div className="rounded-2xl overflow-hidden aspect-[3/4] relative bg-gray-100 max-w-sm mx-auto w-full md:max-w-none">
           <Image
             src={IMAGES.ewaProfile}
             alt="Ewa Gdaniec — Personal Trainerin Berlin"
@@ -16,7 +16,7 @@ export default function AboutEwa() {
 
         <div>
           <p className="text-xs font-bold text-brand uppercase tracking-widest mb-2">Über Ewa</p>
-          <h2 className="text-3xl font-black tracking-tight leading-tight mb-4">
+          <h2 className="text-2xl sm:text-3xl font-black tracking-tight leading-tight mb-4">
             Mehr als ein Trainingsprogramm.
           </h2>
           <p className="text-sm text-gray-500 leading-relaxed mb-4">
@@ -46,7 +46,7 @@ export default function AboutEwa() {
 
           <a
             href={CONTACT.phoneHref}
-            className="inline-flex items-center gap-2 bg-brand text-white text-sm font-bold px-6 py-3.5 rounded-lg hover:bg-red-600 transition-colors"
+            className="inline-flex items-center gap-2 bg-brand text-white text-sm font-bold px-5 sm:px-6 py-3.5 rounded-lg hover:bg-red-600 transition-colors"
           >
             📞 Ruf mich an — kostenlos &amp; unverbindlich
           </a>

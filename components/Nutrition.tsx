@@ -3,11 +3,11 @@ import { CONTACT, IMAGES, NUTRITION_POINTS } from "@/lib/content";
 
 export default function Nutrition() {
   return (
-    <section className="py-16 px-6">
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-[6fr_5fr] gap-12 items-center">
+    <section className="py-12 sm:py-16 px-4 sm:px-6">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-[6fr_5fr] gap-8 sm:gap-12 items-center">
         <div>
           <p className="text-xs font-bold text-brand uppercase tracking-widest mb-2">Ernährungsberatung</p>
-          <h2 className="text-3xl font-black tracking-tight leading-tight mb-6">
+          <h2 className="text-2xl sm:text-3xl font-black tracking-tight leading-tight mb-6">
             Gesund essen —<br />ohne Zwang.
           </h2>
           <div className="flex flex-col gap-5 mb-8">
@@ -30,7 +30,7 @@ export default function Nutrition() {
             📞 Ernährungsberatung anfragen
           </a>
         </div>
-        <div className="rounded-2xl overflow-hidden aspect-[3/4] relative bg-gray-100">
+        <div className="rounded-2xl overflow-hidden aspect-[3/4] relative bg-gray-100 max-w-sm mx-auto w-full md:max-w-none order-first md:order-last">
           <Image
             src={IMAGES.nutrition}
             alt="Ernährungsberatung mit Ewa"

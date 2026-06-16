@@ -3,18 +3,18 @@ import { CONTACT, SHOP_PRODUCTS } from "@/lib/content";
 
 export default function Shop() {
   return (
-    <section id="shop" className="py-16 px-6">
+    <section id="shop" className="py-12 sm:py-16 px-4 sm:px-6">
       <div className="max-w-5xl mx-auto">
-        <div className="flex justify-between items-end mb-8">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-3 mb-6 sm:mb-8">
           <div>
             <p className="text-xs font-bold text-brand uppercase tracking-widest mb-2">4EWAFIT Shop</p>
-            <h2 className="text-3xl font-black tracking-tight leading-tight">Mehr als Training.</h2>
+            <h2 className="text-2xl sm:text-3xl font-black tracking-tight leading-tight">Mehr als Training.</h2>
           </div>
           <a
             href={CONTACT.shopUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-gray-900 text-white text-sm font-bold px-5 py-2.5 rounded-lg hover:bg-gray-700 transition-colors whitespace-nowrap"
+            className="self-start sm:self-auto flex items-center gap-2 bg-gray-900 text-white text-sm font-bold px-5 py-2.5 rounded-lg hover:bg-gray-700 transition-colors whitespace-nowrap"
           >
             Zum Shop →
           </a>
@@ -23,7 +23,7 @@ export default function Shop() {
           Im Shop findest du ausgewählte Produkte — von Online-Coaching direkt mit Ewa bis hin zu
           natürlichen Beautyprodukten die von innen heraus wirken.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5">
           {SHOP_PRODUCTS.map((product) => (
             <a
               key={product.name}
@@ -54,7 +54,7 @@ export default function Shop() {
         <div className="mt-6 bg-gray-50 rounded-xl p-4 flex items-center gap-3 border border-gray-100 text-sm text-gray-500">
           <span className="text-xl">🛒</span>
           <span>
-            Alle Produkte direkt im Shop:{" "}
+            Alle Produkte:{" "}
             <a
               href={CONTACT.shopUrl}
               target="_blank"
