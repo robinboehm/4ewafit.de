@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-brand: #ff3b1e;
+  --color-dark-bg: #111111;
+  --color-dark-card: #1a1a1a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #111111;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
