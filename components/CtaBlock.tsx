@@ -17,7 +17,7 @@ export default function CtaBlock() {
           <span>📞</span>
           <span>{CONTACT.phone}</span>
         </a>
-        <p className="text-sm text-white/60">Mo–Fr · 8–20 Uhr · Auch WhatsApp</p>
+        <p className="text-sm text-white/60">Auch WhatsApp</p>
       </div>
     </section>
   );
