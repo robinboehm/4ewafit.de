@@ -14,7 +14,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
 
       <div className="relative z-10 w-full max-w-5xl mx-auto px-5 sm:px-8 pb-10 sm:pb-14 pt-10">
-        <div className="inline-block bg-brand text-white text-xs font-bold px-3 py-1 rounded tracking-widest uppercase mb-4 whitespace-nowrap">
+        <div className="inline-block bg-brand text-white text-xs font-bold px-3 py-1 rounded tracking-widest uppercase mb-4 max-w-[80%]">
           Personal Training · Berlin Friedrichshain
         </div>
 
@@ -25,24 +25,27 @@ export default function Hero() {
         </h1>
 
         <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-lg mb-7">
-          Ewa begleitet Einsteiger:innen — mit 15 Jahren Erfahrung, eigenem Studio
-          und einem Plan der wirklich zu dir passt.
+          Ewa begleitet Einsteiger:innen mit 15 Jahren Erfahrung, eigenem Studio
+          und einem Plan, der wirklich zu dir passt.
         </p>
 
         <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 mb-7">
           <a
             href={CONTACT.phoneHref}
-            className="flex items-center justify-center gap-3 bg-brand text-white text-base sm:text-lg font-extrabold px-6 sm:px-7 py-4 rounded-xl hover:bg-red-600 transition-colors"
+            className="flex items-center justify-center gap-3 bg-brand text-white text-sm sm:text-lg font-extrabold px-4 sm:px-7 py-3 sm:py-4 rounded-xl hover:bg-red-600 transition-colors"
           >
             <span>📞</span>
             <span>{CONTACT.phone}</span>
           </a>
-          <a
-            href={`mailto:${CONTACT.email}`}
-            className="text-white/60 text-sm underline hover:text-white/90 transition-colors text-center sm:text-left"
-          >
-            oder schreib eine Mail →
-          </a>
+          <div className="flex flex-col gap-1 text-center sm:text-left">
+            <a
+              href={`mailto:${CONTACT.email}`}
+              className="text-white/60 text-sm underline hover:text-white/90 transition-colors"
+            >
+              oder schreib eine Mail →
+            </a>
+            <span className="text-white/40 text-xs">auch per WhatsApp</span>
+          </div>
         </div>
 
         <div className="flex gap-5 sm:gap-7">
