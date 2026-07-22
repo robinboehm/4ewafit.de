@@ -1,3 +1,4 @@
+import Script from "next/script";
 import { REVIEWS } from "@/lib/content";
 
 export default function Testimonials() {
@@ -33,6 +34,10 @@ export default function Testimonials() {
           >
             auf personalfitness.de
           </a>
+        </div>
+        <div className="mt-8">
+          <div data-pf-widget="6370"></div>
+          <Script src="https://www.personalfitness.de/widget.js" strategy="afterInteractive" />
         </div>
       </div>
     </section>
