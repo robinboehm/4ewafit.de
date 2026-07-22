@@ -19,6 +19,21 @@ export default function Footer() {
             {CONTACT.email}
           </a>
         </div>
+        <a
+          href="https://www.personalfitness.de/suche/trainer/6370/ewa-gdaniec-berlin.html"
+          title="Kundenbewertungen & Erfahrungen zu Ewa Gdaniec. Mehr Infos anzeigen."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="https://www.personalfitness.de/embleme/6370.png"
+            alt="Erfahrungen & Bewertungen zu Ewa Gdaniec"
+            width={120}
+            height={137}
+            style={{ border: 0 }}
+          />
+        </a>
         <div className="flex gap-4">
           <Link href="/impressum" className="hover:text-gray-300 transition-colors">Impressum</Link>
           <Link href="/datenschutz" className="hover:text-gray-300 transition-colors">Datenschutz</Link>
